@@ -11,30 +11,29 @@ h3{
 
 .thumb_box {
     display: flex;
-    margin-right: 5%;
+    margin-right: %;
+    width: 100%;
 }
 
 .thumbnail {
-    width: 500px;
+    width: 100%;
     height: 300px;
 }
 
 .thumbnail img {
-    width: 450px; 
+    width: 100%; 
     margin: 0px;
     padding: 0px;
 
 }
 
 .status{
-    width: 485px;
+    width: 100%;
     height: 25px;
-    left: 807px;
-    top: 787px;
     background: #37DE3D;
     border-radius: 50px;
     text-align: center;
-    margin: 8px 0px;
+    margin: 8px 6px;
     font-size:small;
     
 
@@ -46,45 +45,87 @@ h3{
 
 }
 
-.fund_numbers{
-
-
-}
-
 .column{
     display: flex;
     flex-wrap: wrap;
 }
 
-position: absolute;
-width: 186px;
-height: 57px;
-left: 807px;
-top: 919px;
+.progBar{
+    width: auto;
+    height: 25px;
+    background-color:#d7d7d7;
+    position:relative;
+    border-radius:5px;
+    overflow: hidden;
+}
 
-font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 35px;
+.bar{
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
 
-color: #462703;
-
-
-
-/* 目標FUND数 */
+}
 
 
-position: absolute;
-width: 199px;
-height: 57px;
-left: 1036px;
-top: 918px;
+.progBar .bar{
+    position:absolute;
+    height: 100%;
+    background-color:#ffa600;
+    animation: progress 2s normal;
+    animation-fill-mode: forwards;
+}
 
-font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 35px;
+@keyframes progress {
+    0% {width: 0}
+    100% {width: 80%}
+}
 
-color: #FE0909;
+.progBar_finished{
+    width: auto;
+    height: 25px;
+    background-color:#eae9e9;
+    position:relative;
+    border-radius:5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.bar_finished{
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+}
+
+.progBar_finished .bar_finished{
+    position:absolute;
+    animation-name: progress_finished;
+    height: 100%;
+    background-color:#ffa600;
+    animation:progress_finished 2s normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes progress_finished {
+    0% {width: 0}
+    100% {width: 100%}
+}
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    } 
+
+@keyframes fadeUpAnime{
+    from {
+    opacity: 0;
+    transform: translateY(100px);
+    }
+    
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+ }
