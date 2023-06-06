@@ -1,0 +1,90 @@
+h3{
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background: #462703e6;
+    margin-bottom: 4rem;
+}
+
+.thumb_box {
+    display: flex;
+    margin-right: 5%;
+}
+
+.thumbnail {
+    width: 500px;
+    height: 300px;
+}
+
+.thumbnail img {
+    width: 450px; 
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.status{
+    width: 485px;
+    height: 25px;
+    left: 807px;
+    top: 787px;
+    background: #37DE3D;
+    border-radius: 50px;
+    text-align: center;
+    margin: 8px 0px;
+    font-size:small;
+    
+
+}
+
+.fund_gained{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fund_numbers{
+
+
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+position: absolute;
+width: 186px;
+height: 57px;
+left: 807px;
+top: 919px;
+
+font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+
+color: #462703;
+
+
+
+/* 目標FUND数 */
+
+
+position: absolute;
+width: 199px;
+height: 57px;
+left: 1036px;
+top: 918px;
+
+font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+
+color: #FE0909;
