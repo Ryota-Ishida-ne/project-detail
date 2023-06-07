@@ -9,6 +9,7 @@ h3{
     margin-bottom: 4rem;
 }
 
+
 .thumb_box {
     display: flex;
     margin-right: 5%;
@@ -24,6 +25,7 @@ h3{
     width: 100%; 
     margin: 0px;
     padding: 0px;
+    height: auto;
 
 }
 
@@ -44,6 +46,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     margin-right: 5%;
+    margin-top: 5%;
 }
 
 .progBar{
@@ -98,11 +101,112 @@ h3{
  }
 
  .btn {
-    width: 80%;
+    width: auto;
+    height: 30px;
     background: #ba874de6;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+    padding: 5px;
+
     }
 
 .btn p {
     color: #fff;
+    padding: 10px;
+}
+
+.shareSns {
+    list-style: none;
+    overflow: hidden;
+    margin:0;
+    padding: 0px;
+}
+.shareSns li {
+    width: 40%;
+    text-align: center;
+    float: left;
+    margin: 10px 0px 5% 25px;
+}
+.shareSns li a {
+    line-height: 20px;
+    font-size: 10px;
+}
+.shareSns li a:hover{
+    opacity: 0.8;
+}
+
+.shareSns li .icon-twitter{
+    display:block;
+    background:#55acee;
+    color:#ffffff;
+}
+.shareSns li .icon-facebook{
+    display:block;
+    background:#3B5998;
+    color:#ffffff;
+}
+
+.projectinfo {
+    background: rgba(255, 246, 233, 0.968);
+    border-radius: 5px;
+    padding: 5px 20px 5px;
+    margin: 20px;
+
+}
+
+.book-site-frame {
+    width: 700px;
+}
+
+/* 2.枠線部分（ベージュに変更） */
+.border-gray {
+    background: rgba(255, 246, 233, 0.968);
+    border-radius: 5px;
+    padding: 5px 20px 5px;
+    margin: 20px;
+
+}
+
+/* 3. 枠線内をクリックすると販売元に飛ぶ */
+a.project-list {
+   display: flex;
+   color: #462703e6;
+   padding: 10px;
+}
+
+/* 3. 枠線内をクリックすると販売元に飛ぶ */
+a.project-list :hover{
+   text-decoration:none;
+   color: #B19956;
+}
+
+/*  4.1. 商品画像の表示 */
+.book-img-block {
+   display:inline-block;
+   padding: 5px 0px 5px;
+}
+
+/*  4.2. 商品画像の表示 */
+.book-img-block img {
+  width: 90px;  /* 適宜画像サイズを調整する */
+  margin-right: 20px ;
+}
+
+/* 5. 商品名、著者名、ナレーターの表示 */
+.book-text-block {
+   display:inline-block;
+}
+
+/* 5. 商品名の表示 */
+.project-name h1, h2, h4, h5, h6 {
+   font-size: 15px;
+   font-weight: bold;
+   margin: 0px 0px;
+}
+
+/* 5. 著者名、ナレーターの表示 */
+.book-text-block p {
+   margin: 0px;
+   line-height: 1.1em;
+   word-break: normal;
 }
