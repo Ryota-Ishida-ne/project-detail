@@ -98,7 +98,7 @@ h3{
  .btn {
     width: 100%;
     height: 30px;
-    background: #ba874de6;
+    background: #5c3302e6;
     margin-top: 3%;
     padding: 5px;
 
@@ -127,6 +127,14 @@ h3{
 .shareSns li a:hover{
     opacity: 0.8;
 }
+
+.btn:hover {
+    transform: translateY(2px);
+  }
+  
+.btn:active {
+    transform: translateY(5px);
+  }
 
 .shareSns li .icon-twitter{
     display:block;
