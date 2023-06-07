@@ -12,20 +12,19 @@ h3{
 
 .thumb_box {
     display: flex;
-    margin-right: 5%;
-    width: 100%;
+    height: auto;
+    margin-right: 6%;
 }
 
 .thumbnail {
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
-.thumbnail img {
-    width: 100%; 
-    margin: 0px;
-    padding: 0px;
-    height: auto;
+.column2{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -37,26 +36,22 @@ h3{
     text-align: center;
     margin: 8px 6px;
     font-size:small;
-    margin-right: 5%;
-    
-
 }
 
 .fund_gained{
     display: flex;
     flex-wrap: wrap;
-    margin-right: 5%;
     margin-top: 5%;
 }
 
 .progBar{
     width: 100%;
-    height: 25px;
+    height: 20px;
     background-color:#d7d7d7;
     position:relative;
     border-radius:5px;
     overflow: hidden;
-    margin-right: 5%;
+
 }
 
 .bar{
@@ -101,10 +96,9 @@ h3{
  }
 
  .btn {
-    width: auto;
+    width: 100%;
     height: 30px;
     background: #ba874de6;
-    margin-left: 5%;
     margin-top: 3%;
     padding: 5px;
 
@@ -112,20 +106,19 @@ h3{
 
 .btn p {
     color: #fff;
-    padding: 10px;
 }
 
 .shareSns {
     list-style: none;
     overflow: hidden;
-    margin:0;
+    margin: 0%;
     padding: 0px;
 }
 .shareSns li {
-    width: 40%;
+    width: 50%;
     text-align: center;
     float: left;
-    margin: 10px 0px 5% 25px;
+    margin: 10px 0px;    
 }
 .shareSns li a {
     line-height: 20px;
@@ -150,13 +143,11 @@ h3{
     background: rgba(255, 246, 233, 0.968);
     border-radius: 5px;
     padding: 5px 20px 5px;
-    margin: 20px;
-
+    margin: 20px 20px;
+    height: 100%;
 }
 
-.book-site-frame {
-    width: 700px;
-}
+
 
 /* 2.枠線部分（ベージュに変更） */
 .border-gray {
@@ -210,3 +201,4 @@ a.project-list :hover{
    line-height: 1.1em;
    word-break: normal;
 }
+
