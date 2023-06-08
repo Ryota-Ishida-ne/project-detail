@@ -161,7 +161,7 @@ h3{
 .border-gray {
     background: rgba(255, 246, 233, 0.968);
     border-radius: 5px;
-    padding: 5px 20px 5px;
+    padding: 2% 2% 5%;
     margin: 20px;
 
 }
@@ -179,34 +179,43 @@ a.project-list :hover{
    color: #B19956;
 }
 
-/*  4.1. 商品画像の表示 */
-.book-img-block {
-   display:inline-block;
-   padding: 5px 0px 5px;
-}
+
 
 /*  4.2. 商品画像の表示 */
-.book-img-block img {
-  width: 90px;  /* 適宜画像サイズを調整する */
-  margin-right: 20px ;
+.project-img {
+    margin: auto;
+    display: block;
+    width: 400px;  /* 適宜画像サイズを調整する */
+    height: auto;
+    align-items: center;
 }
 
-/* 5. 商品名、著者名、ナレーターの表示 */
-.book-text-block {
-   display:inline-block;
-}
-
-/* 5. 商品名の表示 */
+/*各項目名の表示 */
 .project-name h1, h2, h4, h5, h6 {
-   font-size: 15px;
-   font-weight: bold;
-   margin: 0px 0px;
+    display:inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    
 }
 
-/* 5. 著者名、ナレーターの表示 */
-.book-text-block p {
-   margin: 0px;
-   line-height: 1.1em;
-   word-break: normal;
+.h4{
+    background-color:#ffffff;
+    align-items: center;
+
 }
 
+.project-transition{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 2%;
+    height: auto;
+    align-items: center;
+
+}
+
+.project-name .project-name-info{
+    display: block;
+    height: auto;
+    align-items: center;
+}
