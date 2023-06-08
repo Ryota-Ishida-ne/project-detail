@@ -13,28 +13,29 @@ h3{
 .thumb_box {
     display: flex;
     height: auto;
-    margin-right: 6%;
+    line-height: normal;
+    margin-bottom: auto;
+    overflow:visible;
 }
 
 .thumbnail {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    margin: 2%;
 }
 
 .column2{
-    display: inline-block;
     width: 100%;
-    height: 100%;
-
+    height: auto;
 }
 
 .status{
-    width: 100%;
+    width: auto;
     height: 25px;
     background: #37DE3D;
     border-radius: 50px;
     text-align: center;
-    margin: 8px 6px;
+    margin:  6px;
     font-size:small;
 }
 
@@ -51,6 +52,8 @@ h3{
     position:relative;
     border-radius:5px;
     overflow: hidden;
+    margin: 0px;
+    padding: 0%;
 
 }
 
@@ -65,7 +68,7 @@ h3{
 
 .progBar .bar{
     position:absolute;
-    height: 100%;
+    height: auto;
     background-color:#ffa600;
     animation: progress 2s normal;
     animation-fill-mode: forwards;
@@ -75,7 +78,6 @@ h3{
     0% {width: 0}
     100% {width: 80%}
 }
-
 
 .fadeUp{
     animation-name:fadeUpAnime;
@@ -99,26 +101,27 @@ h3{
     width: 100%;
     height: 30px;
     background: #5c3302e6;
-    margin-top: 3%;
-    padding: 5px;
-
+    margin-top: 4%;
+    padding: 0px;
+    line-height: 30px;
     }
-
-.btn p {
-    color: #fff;
+.btn p{
+    width: 30px;
+    height: 30px;
 }
 
 .shareSns {
     list-style: none;
     overflow: hidden;
+    padding: 0%;
     margin: 0%;
-    padding: 0px;
 }
 .shareSns li {
     width: 50%;
+    height: auto;
     text-align: center;
     float: left;
-    margin: 10px 0px;    
+    margin: 0px 0px;    
 }
 .shareSns li a {
     line-height: 20px;
@@ -147,26 +150,18 @@ h3{
     color:#ffffff;
 }
 
+.shareSns li .icon-twitter.shareSns li .icon-facebook{
+    display: inline-block;
+}
+
 .projectinfo {
     background: rgba(255, 246, 233, 0.968);
     border-radius: 5px;
-    padding: 5px 20px 5px;
-    margin: 20px 20px;
-    height: 100%;
+    padding: 3px 20px;
+    margin: 15px;
+    height: auto;
 }
 
-
-
-/* 2.枠線部分（ベージュに変更） */
-.border-gray {
-    background: rgba(255, 246, 233, 0.968);
-    border-radius: 5px;
-    padding: 2% 2% 5%;
-    margin: 20px;
-
-}
-
-/* 3. 枠線内をクリックすると販売元に飛ぶ */
 a.project-list {
    display: flex;
    color: #462703e6;
@@ -179,43 +174,34 @@ a.project-list :hover{
    color: #B19956;
 }
 
-
-
-/*  4.2. 商品画像の表示 */
+/*サムネイル画像 */
 .project-img {
-    margin: auto;
-    display: block;
-    width: 400px;  /* 適宜画像サイズを調整する */
+    display: flex;
+    width: 400px;  
     height: auto;
+    margin: 3%;
     align-items: center;
 }
 
-/*各項目名の表示 */
+/*各項目名 */
 .project-name h1, h2, h4, h5, h6 {
-    display:inline-block;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
-    
 }
 
 .h4{
     background-color:#ffffff;
-    align-items: center;
-
 }
 
 .project-transition{
     display: flex;
     width: 100%;
     background-color: #fff;
-    padding: 2%;
-    height: auto;
     align-items: center;
 
 }
 
 .project-name .project-name-info{
     display: block;
-    height: auto;
-    align-items: center;
+    padding-right: 3%;
 }
