@@ -35,7 +35,7 @@ h3{
 
 .status{
     width: 100%;
-    max-height: 25px;
+    height: 25px;
     background: #37DE3D;
     border-radius: 50px;
     text-align: center;
@@ -159,11 +159,13 @@ h3{
 }
 
 .projectinfo {
+    width: 100%;
+    height: auto;
     background: rgba(255, 246, 233, 0.968);
     border-radius: 5px;
     padding: 2px 10px;
     margin: 10px;
-    height: auto;
+    
 }
 
 a.project-list {
