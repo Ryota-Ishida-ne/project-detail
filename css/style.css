@@ -12,6 +12,7 @@ h3{
 
 .thumb_box {
     display: flex;
+    width: 100%;
     height: auto;
     line-height: normal;
     margin-bottom: auto;
@@ -21,7 +22,7 @@ h3{
 .thumbnail {
     width: auto;
     height: auto;
-    margin: 2%;
+    margin: 0% 2% 0 3%;
 }
 
 .column2{
@@ -29,17 +30,17 @@ h3{
     flex-flow: column;
     width: 60%;
     height: auto;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-right: 3%;
+    background: #bedcf4;
 }
 
 .status{
     width: 100%;
-    height: 25px;
+    height: 10%;
     background: #37DE3D;
     border-radius: 50px;
     text-align: center;
-    margin: 6px;
     font-size:small;
 }
 
@@ -47,17 +48,16 @@ h3{
     display: flex;
     flex-wrap: wrap;
     margin-top: 5%;
+    background: #f9deac;
 }
 
 .progBar{
     width: 100%;
-    height: 20px;
+    height: 80%;
     background-color:#d7d7d7;
     position:relative;
     border-radius:5px;
     overflow: hidden;
-    margin: 0px;
-    padding: 0%;
 
 }
 
@@ -66,13 +66,14 @@ h3{
     text-align: center;
     font-size: small;
     font-weight: 700;
+    height: 70%;
 
 }
 
 
 .progBar .bar{
     position:absolute;
-    height: auto;
+    height: 100%;
     background-color:#ffa600;
     animation: progress 2s normal;
     animation-fill-mode: forwards;
@@ -103,22 +104,18 @@ h3{
 
  .btn {
     width: 100%;
-    height: 30px;
+    height: 100%;
     background: #5c3302e6;
-    margin-top: 4%;
-    padding: 0px;
-    line-height: 30px;
+    margin-top: 10%;
+    padding:2% 0 2% 0;
     }
-.btn p{
-    width: 30px;
-    height: 30px;
-}
 
 .shareSns {
+    display: flex;
     list-style: none;
     overflow: hidden;
-    padding: 0%;
-    margin: 0%;
+    padding: 2%;
+    margin:0 10% 0 10%;
 }
 .shareSns li {
     width: 50%;
@@ -164,7 +161,7 @@ h3{
     background: rgba(255, 246, 233, 0.968);
     border-radius: 5px;
     padding: 2px 10px;
-    margin: 10px;
+    margin: 2% 0 2% 0;
     
 }
 
@@ -174,7 +171,7 @@ a.project-list {
    padding: 10px;
 }
 
-/* 3. 枠線内をクリックすると販売元に飛ぶ */
+/* 3. 枠線内をクリックするとリンク先に飛ぶ */
 a.project-list :hover{
    text-decoration:none;
    color: #B19956;
