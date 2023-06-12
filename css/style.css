@@ -9,56 +9,82 @@ h3{
     margin-bottom: 4rem;
 }
 
-
 .thumb_box {
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     height: auto;
-    line-height: normal;
-    margin-bottom: auto;
-    overflow:visible;
 }
 
 .thumbnail {
     width: auto;
     height: auto;
-    margin: 0% 2% 0 3%;
+    margin:0% 2% 0% 2%; 
 }
 
 .column2{
     display: flex;
     flex-flow: column;
-    width: 60%;
+    width: 70%;
     height: auto;
-    margin-top: 0%;
-    margin-right: 3%;
-    background: #bedcf4;
+    margin-right: 2%;
 }
 
 .status{
     width: 100%;
-    height: 10%;
+    height: 15%;
     background: #37DE3D;
     border-radius: 50px;
     text-align: center;
     font-size:small;
 }
 
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.fund_goal{
+    display: flex;
+    flex-wrap: wrap;
+    color: #f61f1f;
+    text-align: left;
+    margin: 2% 5% 2% 5%;
+    
+}
+
 .fund_gained{
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 0 5% 0;
-    background: #f9deac;
+    text-align: left;
+    margin: 2% 5% 2% 5%;
+
+
+}
+
+.fund_item{
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.fund_number{
+    font-size: 3.0vw;
+}
+
+.title{
+    font-size: 1.2vw;
 }
 
 .progBar{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color:#d7d7d7;
     position:relative;
     border-radius:5px;
     overflow: hidden;
-
 }
 
 .bar{
@@ -66,10 +92,8 @@ h3{
     text-align: center;
     font-size: small;
     font-weight: 700;
-    height: 70%;
-
+    height: 100%;
 }
-
 
 .progBar .bar{
     position:absolute;
@@ -88,6 +112,8 @@ h3{
     animation-name:fadeUpAnime;
     animation-duration:3s;
     animation-fill-mode:forwards;
+    margin: 5% 0 5% 0;
+    height: 100%;
     } 
 
 @keyframes fadeUpAnime{
@@ -102,13 +128,27 @@ h3{
     }
  }
 
- .btn {
+.countdown{
+    text-align: center;
+}
+
+.btn {
     width: 80%;
     height: auto;
     background: #5c3302e6;
-    padding: 5px 10% 5px 10%;
-    margin: 5% 10% 0 10%;
-    }
+    padding:0%;
+    margin:2% 10% 2% 10%;
+    align-items: center;
+}
+
+
+.btn:hover {
+    transform: translateY(2px);
+}
+      
+.btn:active {
+    transform: translateY(5px);
+}
 
 .shareSns {
     display: flex;
@@ -116,9 +156,9 @@ h3{
     width: 100%;
     height: 100%;
     list-style: none;
-    padding:0;
+    padding:0%;
     margin:0 0 0 0;
-    background: #fcd4f1;
+    background: #ffffff;
 }
 .shareSns li {
     width: 100%;
@@ -130,21 +170,12 @@ h3{
 .shareSns li a:hover{
     opacity: 0.8;
 }
-
-.btn:hover {
-    transform: translateY(2px);
-  }
-  
-.btn:active {
-    transform: translateY(5px);
-  }
-
 .shareSns li .icon-twitter{
     display:block;
     background:#55acee;
     color:#ffffff;
     width: auto;
-    height: 70%;
+    height: 50%;
     font-weight: 700;
 }
 .shareSns li .icon-facebook{
@@ -152,20 +183,20 @@ h3{
     background:#3B5998;
     color:#ffffff;
     width: auto;
-    height: 70%;
+    height: 50%;
     font-weight: 700;
 }
 
 .shareSns li .icon-watch{
     display: block;
     color:#FF0000; 
-    font-size: medium;
-    background: #37DE3D;
+    font-size: 1rem;
+    background: #ffffff;
 }
 
 /*各項目名 */
 .project-name h1, h2, h4, h6 {
-    font-size: 12px;
+    font-size: 2vw;
     font-weight: bold;
 }
 /*各枠*/
@@ -175,14 +206,13 @@ h3{
     background: rgba(255, 246, 233, 0.968);
     border-radius: 5px;
     padding: 2%;
-    margin: 2% 0 2% 0;
+    margin-top: 2%;
     
 }
 
 a.project-list {
    display: flex;
    color: #462703e6;
- 
 }
 
 /* 3. 枠線内をクリックするとリンク先に飛ぶ */
@@ -200,7 +230,7 @@ a.project-list :hover{
 }
 
 .project-{
-    background: #37DE3D;
+    margin: 2%;
 }
 
 .project-name{
@@ -209,7 +239,7 @@ a.project-list :hover{
 }
 
 .project-name h5{
-    font-size: 10px;
+    font-size: 1.5vw;
     font-weight: bold;
     margin: auto;
     padding-top: 3%;    
@@ -218,16 +248,12 @@ a.project-list :hover{
 .project-transition{
     width: 100%;
     height: auto;
-    background-color: #feefef;
+    background-color: #ffffff;
     align-items: center;
 
 }
 
-.project-name-info{
-    font-size: 10px;
-    padding-right: 3%;
-    text-align: left;
-    background: #37DE3D;
-
+.project-body{
+    font-size: 1.5vw;
 
 }
