@@ -11,88 +11,117 @@ h3{
 
 .thumb_box {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction:row;
     width: 100%;
     height: auto;
+
+    
 }
 
 .thumbnail {
-    width: auto;
+    width: 100%;
     height: auto;
-    margin:0% 2% 0% 2%; 
+    margin: 0 4% 0 2%;
+  
 }
 
 .column2{
     display: flex;
     flex-flow: column;
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-right: 2%;
+    margin: 0% 0% 0% 0%;
+
 }
 
 .status{
     width: 100%;
-    height: 15%;
+    height: 10%;
     background: #37DE3D;
     border-radius: 50px;
     text-align: center;
-    font-size:small;
+    font-size: 2vw; 
+    color: #ffff;
+    font-weight: 700;
 }
 
-dl {
+.fund_all{
+    width: 100%;
+    height: auto;
+
+}
+
+.fund_all dl{
     display: flex;
-    flex-wrap: wrap;
+    width: 90%;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    text-align: left;
+    margin: 3% 5% 3% 5%;
 }
 
 .fund_goal{
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     color: #f61f1f;
-    text-align: left;
-    margin: 2% 5% 2% 5%;
-    
+  
 }
 
 .fund_gained{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    margin: 2% 5% 2% 5%;
-
-
-}
-
-.fund_item{
-    text-align: left;
-    font-size: 1.2vw;
-}
-
-.fund_number{
-    font-size: 3.0vw;
+    width: 100%;
+   
 }
 
 .title{
     font-size: 1.2vw;
 }
 
+.fund_number{
+    font-size: 3.0vw;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.fund_item{
+    font-size: 1.2vw;
+    margin: 0 15% 0
+}
+
+.progBar_all{
+    display: block;
+    height: 30%;
+   
+}
+
+.progBar_title{
+    text-align: left; 
+    font-size: 1.5vw;
+    margin:0% 0% 0% 0%;
+    padding-bottom: 1%;
+
+
+}
+
+.countdown{
+    text-align: center;
+    margin:0%;
+    font-size: 1.5vw;
+   
+}
+
 .progBar{
     width: 100%;
-    height: 100%;
+    height: 30%;
     background-color:#d7d7d7;
     position:relative;
     border-radius:5px;
     overflow: hidden;
+    
 }
 
 .bar{
-    color: #fff;
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: 800;
     text-align: center;
-    font-size: small;
-    font-weight: 700;
-    height: 100%;
 }
 
 .progBar .bar{
@@ -112,9 +141,7 @@ dl {
     animation-name:fadeUpAnime;
     animation-duration:3s;
     animation-fill-mode:forwards;
-    margin: 5% 0 5% 0;
-    height: 100%;
-    } 
+} 
 
 @keyframes fadeUpAnime{
     from {
@@ -126,76 +153,97 @@ dl {
     opacity: 1;
     transform: translateY(0);
     }
- }
-
-.countdown{
-    text-align: center;
 }
 
-.btn {
-    width: 80%;
-    height: auto;
+.support{
+    width: 100%;
+    height: 15%;
+    
+}
+
+.support_btn{
+    width: 70%;
+    height: 100%;
     background: #5c3302e6;
-    padding:0%;
-    margin:2% 10% 2% 10%;
-    align-items: center;
+    margin:0% 15% 0% 15%;
+    padding: 3% 0 0 3%;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 600;
+   
 }
 
 
-.btn:hover {
+.support_btn:hover {
     transform: translateY(2px);
 }
       
-.btn:active {
+.support_btn:active {
     transform: translateY(5px);
 }
 
-.shareSns {
-    display: flex;
-    float: left;
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    padding:0%;
-    margin:0 0 0 0;
-    background: #ffffff;
-}
-.shareSns li {
-    width: 100%;
-    padding: 0%;
-}
-.shareSns li a {
-    font-size: 10px;
-}
-.shareSns li a:hover{
-    opacity: 0.8;
-}
-.shareSns li .icon-twitter{
-    display:block;
-    background:#55acee;
-    color:#ffffff;
-    width: auto;
-    height: 50%;
-    font-weight: 700;
-}
-.shareSns li .icon-facebook{
-    display:block;
-    background:#3B5998;
-    color:#ffffff;
-    width: auto;
-    height: 50%;
-    font-weight: 700;
+.share{
+width: 100%;
+height: 12%;
 }
 
-.shareSns li .icon-watch{
-    display: block;
-    color:#FF0000; 
-    font-size: 1rem;
-    background: #ffffff;
+.share_btn {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    height: 96%;
+    list-style: none;
+    margin:0%;
+    padding: 2% 0 2% 0;
 }
+.share_btn li {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.share_btn li .icon-twitter{
+    background:#55acee;
+    color:#ffffff;
+    font-size: 1.2vw;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    flex: 1;
+    padding: 5%;
+
+}
+.share_btn li .icon-facebook{
+    background:#3B5998;
+    color:#ffffff;
+    font-size: 1.2vw;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    flex: 1;
+    padding:5%;
+}
+
+.share_btn li .icon-watch{
+    color:#FF0000; 
+    background: #ffffff; 
+    font-size: 1.2vw;
+    width: 100%;
+    height: 100%;
+    padding-top:5% ;
+    flex:1;
+}
+
+.share_btn li a:hover{
+    opacity: 0.8;
+}
+
 
 /*各項目名 */
 .project-name h1, h2, h4, h6 {
+    text-align: left;
     font-size: 2vw;
     font-weight: bold;
 }
@@ -203,16 +251,12 @@ dl {
 .projectinfo {
     width: 100%;
     height: auto;
-    background: rgba(255, 246, 233, 0.968);
+    text-align: left;
+    background: rgba(249, 244, 228, 0.968);
     border-radius: 5px;
     padding: 2%;
-    margin-top: 2%;
+    margin: 2% 0% 0% 2%;
     
-}
-
-a.project-list {
-   display: flex;
-   color: #462703e6;
 }
 
 /* 3. 枠線内をクリックするとリンク先に飛ぶ */
@@ -226,7 +270,6 @@ a.project-list :hover{
     display: flex;
     width: 100%;  
     height: auto;
-  
 }
 
 .project-{
@@ -235,7 +278,7 @@ a.project-list :hover{
 
 .project-name{
     display: flex;
-    padding:0 2% 0 0;
+    padding:0 0% 0 0;
 }
 
 .project-name h5{
@@ -255,5 +298,5 @@ a.project-list :hover{
 
 .project-body{
     font-size: 1.5vw;
-
+    margin-right: 2%;
 }
